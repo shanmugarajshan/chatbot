@@ -76,9 +76,7 @@ const config = {
 function App() {
   return (
     <>
-    <div>
-      <h2></h2>
-      <h2>chat with me</h2>
+    <div>      
     <UisCornerRightDown>
     <i class="uis uis-corner-right-down"></i>
     </UisCornerRightDown>
