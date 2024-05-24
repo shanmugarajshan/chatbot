@@ -22,33 +22,37 @@ const steps = [
   },
   {
     id: '4',
-    message: 'How can I assist you today?',
+    message: "Let's be friends.?",
     trigger: '5',
   },
   {
     id: '5',
     options: [
-      { value: 1, label: 'View Products', trigger: 'viewProducts' },
-      { value: 2, label: 'Place an Order', trigger: 'placeOrder' },
-      { value: 3, label: 'Get Help', trigger: 'getHelp' },
+      { value: 1, label: 'Ok', trigger: 'ok' },
+      { value: 2, label: 'No', trigger: 'no' },
     ],
   },
   {
-    id: 'viewProducts',
-    message: 'Great! Here are our available products:',
+    id: 'ok',
+    message: 'you can send a "hi" message on WhatsApp',
     // Add logic to display products here
-    end: true,
+    trigger: '6',
   },
   {
-    id: 'placeOrder',
-    message: 'Let me assist you with placing an order.',
+    id: 'no',
+    message: 'Ignore',
     // Add logic for order placement here
+    trigger: '7',
+  },
+  {
+    id: '6',
+    message: "only frds",
     end: true,
   },
   {
-    id: 'getHelp',
-    message: 'Sure! How can I assist you further?',
-    trigger: '5', // Go back to the main menu
+    id: '7',
+    message: "anyways it's okay",
+    end: true,
   },
 ];
 
