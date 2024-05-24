@@ -1,6 +1,7 @@
 import React from 'react';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
+import { UisCornerRightDown } from '@iconscout/react-unicons-solid'
 
 import shan from "./Assets/shan.jpg"
 
@@ -46,7 +47,7 @@ const steps = [
   },
   {
     id: '6',
-    message: "only frds",
+    message: "Let me know more about you",
     end: true,
   },
   {
@@ -56,6 +57,18 @@ const steps = [
   },
 ];
 
+const arrowButton = {
+    backgroundColor: "#555",
+    color: "white",
+    padding: "16px 20px",
+    border: "none",
+    cursor: "pointer",
+    opacity: "0.8",
+    position: "fixed",
+    bottom: "23px",
+    right: "28px",
+    width: "280px",
+}
 
 const theme = {
   background: '#EEF7F6',
@@ -76,6 +89,13 @@ const config = {
 function App() {
   return (
     <>
+    <arrowButton>
+      <h2></h2>
+      <h2>chat with me</h2>
+    <UisCornerRightDown>
+    <i class="uis uis-corner-right-down"></i>
+    </UisCornerRightDown>
+    </arrowButton>
       <ThemeProvider theme={theme}>
         <ChatBot
           headerTitle="Do you want to talk to me?"
