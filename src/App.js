@@ -57,19 +57,6 @@ const steps = [
   },
 ];
 
-const arrowButton = {
-    backgroundColor: "#555",
-    color: "white",
-    padding: "16px 20px",
-    border: "none",
-    cursor: "pointer",
-    opacity: "0.8",
-    position: "fixed",
-    bottom: "23px",
-    right: "28px",
-    width: "280px",
-}
-
 const theme = {
   background: '#EEF7F6',
   headerBgColor: '#539537',
@@ -89,13 +76,13 @@ const config = {
 function App() {
   return (
     <>
-    <arrowButton>
+    <div>
       <h2></h2>
       <h2>chat with me</h2>
     <UisCornerRightDown>
     <i class="uis uis-corner-right-down"></i>
     </UisCornerRightDown>
-    </arrowButton>
+    </div>
       <ThemeProvider theme={theme}>
         <ChatBot
           headerTitle="Do you want to talk to me?"
